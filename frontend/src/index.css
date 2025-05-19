@@ -1,0 +1,69 @@
+
+:root {
+  background-color: #eee;
+  display: flex;
+  flex-direction: column;
+  min-block-size: 100%;
+}
+
+body, #root {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#canvas_id_wrapper {
+  inset-block-start: 0;
+  position: -webkit-sticky;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  background-color: #5eaf30;
+  color: #ffffff;
+  column-gap: .5rem;
+  padding: .5rem;
+}
+
+#canvas_id {
+  appearance: none;
+  font: inherit;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+  flex: 1;
+  min-inline-size: 0;
+  color: inherit;
+}
+
+#canvas_wrapper {
+  display: flex;
+  flex-direction: row;
+  inline-size: 100%;
+  max-inline-size: 95vmin;
+  align-self: center;
+  background-color: #ffffff;
+}
+
+#canvas {
+  min-inline-size: 0;
+  min-block-size: 0;
+  flex: 1;
+  pointer-events: none;
+}
+
+#new_canvas {
+  appearance: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
